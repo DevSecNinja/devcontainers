@@ -9,5 +9,5 @@ fi
 
 # Run sample script
 echo "Running sample script..."
-gcc ./sample/hello-world.c -o ./sample/hello-world.out
-./sample/hello-world.out
+gcc ./sample/hello-world.c -o ./sample/hello-world
+./sample/hello-world
