@@ -4,4 +4,5 @@
 # Ignore files without extensions to hide executable files from C
 *
 !*/
+!.*
 !Dockerfile

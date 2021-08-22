@@ -10,3 +10,4 @@ Feedback and pull requests are always welcome! For feedback, please register a G
 
 - [Visual Studio Code, C++, and a Docker Container](https://pspdfkit.com/blog/2020/visual-studio-code-cpp-docker/)
 - [Microsoft's DevContainer files](https://github.com/microsoft/vscode-dev-containers/tree/main/containers)
+- [.gitattributes generator](https://www.richie-bendall.ml/gitattributes-generator/)
