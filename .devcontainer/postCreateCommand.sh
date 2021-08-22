@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Stop script on error
+set -e
+
 # Set specific Git settings for container
 if [[ $(git config --get commit.gpgsign) == true ]]; then
    git config --worktree commit.gpgsign false
