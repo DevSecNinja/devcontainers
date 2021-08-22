@@ -1,0 +1,24 @@
+{
+    "[cpp]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "clangd.arguments": [
+        "-background-index",
+        "-compile-commands-dir=debug"
+    ],
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "bitset": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "ios": "cpp",
+        "ostream": "cpp",
+        "utility": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
+    },
+    "editor.formatOnSave": true
+}
