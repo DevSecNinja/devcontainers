@@ -8,6 +8,9 @@
 		"--userns=host"
 	],
 	"settings": {
+		"[c]": {
+			"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+		},
 		"terminal.integrated.defaultProfile.linux": "zsh",
 		"C_Cpp.intelliSenseEngine": "Disabled",
 		"cmake.environment": {
