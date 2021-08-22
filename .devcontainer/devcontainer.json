@@ -1,36 +1,25 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/cpp
 {
 	"name": "C/C++ Devcontainer",
-	// Specifies where to find the Dockerfile to use.
 	"dockerFile": "Dockerfile",
-	// We add extra permissions which are needed for debugging, etc.
 	"runArgs": [
 		"--cap-add=SYS_PTRACE",
 		"--security-opt",
 		"seccomp=unconfined",
 		"--userns=host"
 	],
-	// Set *default* container-specific `settings.json` values on container creation.
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "zsh",
-		// Disable the IntelliSense engine of the C/C++ Extension
-		// as we use a different extension for that
 		"C_Cpp.intelliSenseEngine": "Disabled",
 		"cmake.environment": {
-			// We configure clang-10 as our default compiler.
 			"CC": "/usr/bin/clang-10",
 			"CXX": "/usr/bin/clang++-10"
 		},
-		// Tell the CMake extensions where to find CMake.
 		"cmake.cmakePath": "/usr/bin/cmake",
 		"clangd.arguments": [
 			"-background-index",
 			"-compile-commands-dir=debug"
 		]
 	},
-	// Add the IDs of extensions you want installed when the container is created.
-	// I have added some extensions that I like to use
 	"extensions": [
 		"DavidAnson.vscode-markdownlint",
 		"llvm-vs-code-extensions.vscode-clangd",
@@ -40,6 +29,5 @@
 		"ms-vscode.cpptools",
 		"vadimcn.vscode-lldb"
 	],
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh"
 }

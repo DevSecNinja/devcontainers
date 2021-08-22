@@ -1,2 +1,8 @@
 # Ignore default .out files
 *.out
+
+# Ignore files without extensions to hide executable files from C
+*
+!*/
+!.*
+!Dockerfile
